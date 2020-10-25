@@ -65,8 +65,7 @@ let me = {
 
 for(let i=0; i<data.length; i++){
     for(let j=0;j<data[i].length;j++){
-        me.findPos(data[i][j])
-        
+        me.findPos(data[i][j])    
     }
     me.getCode()
 }
@@ -74,11 +73,8 @@ me.reset()
 for(let i=0; i<data.length; i++){
     for(let j=0;j<data[i].length;j++){
         me.partTwo(data[i][j])
-
-    }
-    
+    }    
     me.getCode2()
-
 }
 
 
