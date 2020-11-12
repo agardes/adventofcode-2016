@@ -69,41 +69,25 @@ function locationStatus(location,grid,direction,oldPaths){
         switch(direction){
             case 'U':
                 if(opened.indexOf(hash[0])!==-1){
-                    if(grid[dft][dfl]=="G"){
-                        return 'goal'
-                    }else{
-                        return 'valid'
-                    }                
+                    return grid[dft][dfl]=="G" ? 'goal':'valid'    
                 }else{
                     return 'invalid'
                 }
             case 'D':
                 if(opened.indexOf(hash[1])!==-1){
-                    if(grid[dft][dfl]=="G"){
-                        return 'goal'
-                    }else{
-                        return 'valid'
-                    }
+                    return grid[dft][dfl]=="G" ? 'goal':'valid'
                 }else{
                     return 'invalid'
                 }
             case 'L':
                 if(opened.indexOf(hash[2])!==-1){
-                    if(grid[dft][dfl]=="G"){
-                        return 'goal'
-                    }else{
-                        return 'valid'
-                    }
+                    return grid[dft][dfl]=="G" ? 'goal':'valid'
                 }else{
                     return 'invalid'
                 }
             case 'R':
                 if(opened.indexOf(hash[3])!==-1){
-                    if(grid[dft][dfl]=="G"){
-                        return 'goal'
-                    }else{
-                        return 'valid'
-                    }
+                    return grid[dft][dfl]=="G" ? 'goal':'valid'
                 }else{
                     return 'invalid'
                 }
